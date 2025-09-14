@@ -61,13 +61,12 @@ body {
 .fields li {
     margin: 0;
     color: #f5f5f5;
-    font-weight: 500;
+    font-size: 70%;
 }
 
 .fields li {
     min-width: 19%;
     max-width: 19%;
     border-right: 3px solid #f5f5f5;
-    padding-left: 2vw;
-
+    padding-left: 1vw;
 }
