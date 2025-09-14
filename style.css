@@ -13,10 +13,10 @@ body {
 .h1 {
     font-weight: 600;
     font-size: 20px;
-    justify-self: center;    
+    justify-self: center;
 }
 
-.container form{
+.container form {
     padding-left: 2vw;
     display: flex;
     flex-direction: column;
@@ -33,7 +33,7 @@ body {
     margin-left: 2vw;
 }
 
-.buttons .btn{
+.buttons .btn {
     padding: 1vh 2vw;
     background-color: green;
     border-radius: 5px;
@@ -57,17 +57,17 @@ body {
     border-bottom: 2px solid #f5f5f5;
 }
 
-.table > .fields li,
-.fields li{
+.table>.fields li,
+.fields li {
     margin: 0;
     color: #f5f5f5;
     font-weight: 500;
-    
 }
 
-.book-container .fields li{
-    
+.fields li {
+    min-width: 19%;
+    max-width: 19%;
+    border-right: 3px solid #f5f5f5;
+    padding-left: 2vw;
+
 }
-
-
-
