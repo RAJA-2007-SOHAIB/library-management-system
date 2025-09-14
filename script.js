@@ -30,10 +30,14 @@ const appendBook = function (book) {
             li.textContent = book[detail];
             bookList.appendChild(li);
         }
-        const del = document.createElement("li");
+        const li = document.createElement("li");
+        const del = document.createElement("button");
+        del.classList.add("delete");
         del.textContent = "Delete";
-        bookList.appendChild(del);
+        li.appendChild(del);
+        bookList.appendChild(li);
         container.appendChild(bookList);
+        deleteListener(del);
     }
 }
 
@@ -53,6 +57,15 @@ const clearAll = function () {
     const button = document.querySelector(".yellow");
     button.addEventListener("click", event => {
         clear();
+    })
+}
+
+const deleteListener = function (btn) {
+    
+    btn.addEventListener("click", event => {
+        const ul = event.target.parentElement.parentElement;
+        const container = ul.parentElement;
+        container.removeChild(ul);
     })
 }
 
